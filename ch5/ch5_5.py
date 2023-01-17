@@ -13,7 +13,7 @@ def checkPass():
         elif i >= '0' and  i <= '9':
             num += 1
 
-    if num == 0 or upper == 0 or lower == 0:
+    if num == 0 or upper == 0 or lower == 0 or len(p) < 8:
         print('사용할 수 없습니다. 다시 입력하세요! \n')
         checkPass()
     else:
